@@ -1,7 +1,8 @@
 import React from 'react'
 import {Text, SafeAreaView, View, TouchableOpacity, Image} from 'react-native'
 import Styles from '../styles/Styles'
-import watering from '../assets/watering.png'
+import watering from '../assets/watering.png';
+import {Button} from '../components/Button'
 
 export function Wellcome(){
   return (
@@ -21,11 +22,7 @@ export function Wellcome(){
         sempre que precisar.
       </Text>
 
-      <TouchableOpacity style={[Styles.buttonwc, Styles.align]} activeOpacity={0.5}> 
-        <Text style={[{color: '#FFF', fontSize: 24}]}>
-            >
-        </Text>
-      </TouchableOpacity>
+    <Button title={'Avançar'}/>
 
     </SafeAreaView>
   )

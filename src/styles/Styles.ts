@@ -29,9 +29,10 @@ export default StyleSheet.create({
         height: 284,
     },
     buttonwc:{
-        width: 56,
+        minWidth: 56,
         height: 56,
         borderRadius: 20,
+        paddingHorizontal: 15,
         backgroundColor: colors.green,
     }
 })

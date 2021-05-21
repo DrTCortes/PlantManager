@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import {Text, SafeAreaView, View, TextInput} from 'react-native'
+import {Text, SafeAreaView, View, TextInput, KeyboardAvoidingView} from 'react-native'
 import Styles from '../styles/Styles'
 import {Feather} from '@expo/vector-icons'
 
@@ -8,6 +8,7 @@ import {Button} from '../components/Button'
 export function UserIdentification(){
     return(
         <SafeAreaView style={Styles.container}>
+            <KeyboardAvoidingView style={Styles.container}>
             <View style={[Styles.container, Styles.align, Styles.margin, {paddingHorizontal: 20}]}>
             
                 <View style={[Styles.align, Styles.form]}>
@@ -28,6 +29,7 @@ export function UserIdentification(){
                 </View>
 
             </View>
+            </KeyboardAvoidingView>
         </SafeAreaView>
 
     )

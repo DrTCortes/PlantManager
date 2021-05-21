@@ -8,18 +8,24 @@ import {Button} from '../components/Button'
 export function UserIdentification(){
     return(
         <SafeAreaView style={Styles.container}>
-            <View style={[Styles.container, Styles.align, {paddingHorizontal: 20}]}>
+            <View style={[Styles.container, Styles.align, Styles.margin, {paddingHorizontal: 20}]}>
             
-            <View style={[{width: 60, height: 60, backgroundColor: 'yellow'}]}/>
+                <View style={[Styles.align, Styles.form]}>
 
-            <Text style={Styles.text}>
-                Como podemos {'\n'}
-                chamar você?
-            </Text>
+                    <Text style={Styles.emoji}>😄</Text>
 
-            <TextInput autoCapitalize={'characters'} style={Styles.textInput}></TextInput>
-            
-            <Button title={'Confirmar'}></Button>
+                    <Text style={Styles.text}>
+                        Como podemos {'\n'}
+                        chamar você?
+                    </Text>
+
+                    <TextInput placeholder={'Digite seu nome'} autoCapitalize={'words'} style={Styles.textInput}></TextInput>
+                    
+                    <View style={Styles.footer}>
+                        <Button title={'Confirmar'}></Button>
+                    </View>
+
+                </View>
 
             </View>
         </SafeAreaView>

@@ -14,8 +14,8 @@ export default function App(){
     Jost_600SemiBold,
   })
   
-  // if (!fontsLoaded){
-  //   return (console.log('Carregando!'))}
+  if (!fontsLoaded){
+    return (<AppLoading/>)}
 
   return (
     <UserIdentification/>

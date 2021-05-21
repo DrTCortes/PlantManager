@@ -14,7 +14,11 @@ export default StyleSheet.create({
         alignItems: 'center'
     },
     margin: {
-        margin: 0,
+        marginVertical: 50,
+    },
+    form:{
+        // paddingHorizontal: 54,
+        width: '100%',
     },
     title:{
         fontSize: 28,
@@ -35,14 +39,20 @@ export default StyleSheet.create({
         fontFamily: fonts.jostSemiBold,
         textAlign: 'center',
         color: colors.heading,
-        lineHeight: 34,
+        lineHeight: 32,
+        marginTop: 30,
     },
     textInput:{
-        width: widthDisplay,
-        height: 50,
-        textAlign: 'center',
-        borderBottomColor: '#000',
         borderBottomWidth: 1,
+        borderBottomColor: colors.gray,
+        width: widthDisplay,
+        fontSize: 18,
+        marginTop: 50,
+        padding: 10,
+        textAlign: 'center',
+    },
+    emoji:{
+        fontSize: 50,
     },
     image:{
         width: widthDisplay,
@@ -50,7 +60,8 @@ export default StyleSheet.create({
         maxHeight: heightDisplay,
     },
     button:{
-        paddingHorizontal: 60,
+        height: 56,
+        paddingHorizontal: 80,
         paddingVertical: 15,
         borderRadius: 20,
         backgroundColor: colors.green,
@@ -62,5 +73,8 @@ export default StyleSheet.create({
     buttonIcon:{
         fontSize: 32,
         color: '#FFFFFF',
+    },
+    footer:{
+        marginTop: 50,
     }
 })

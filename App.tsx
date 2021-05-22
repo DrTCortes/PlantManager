@@ -1,6 +1,6 @@
 import React from 'react'
 import {Wellcome} from './src/pages/Wellcome'
-import {UserIdentification} from './src/pages/UserIdentification'
+import Routes from './src/routes/index'
 import AppLoading from 'expo-app-loading'
 import {
   useFonts, 
@@ -18,6 +18,6 @@ export default function App(){
     return (<AppLoading/>)}
 
   return (
-    <UserIdentification/>
+    <Routes/>
   )
 }

@@ -13,20 +13,20 @@ export default StyleSheet.create({
         justifyContent: 'space-around',
         alignItems: 'center'
     },
-    margin: {
-        marginVertical: 50,
+    paddingFull: {
+        paddingBottom: 50,
+        paddingHorizontal: 20
     },
     form:{
         // paddingHorizontal: 54,
         width: '100%',
     },
     title:{
-        fontSize: 28,
+        fontSize: 24,
         fontFamily: fonts.jostSemiBold,
-        fontWeight: 'bold',
         textAlign: 'center',
         color: colors.heading,
-        lineHeight: 34,
+        lineHeight: 32,
     },
     subtitle:{
         fontSize: 17,
@@ -39,8 +39,7 @@ export default StyleSheet.create({
         fontFamily: fonts.jostSemiBold,
         textAlign: 'center',
         color: colors.heading,
-        lineHeight: 32,
-        marginTop: 30,
+        lineHeight: 32,        
     },
     textInput:{
         borderBottomWidth: 1,
@@ -53,6 +52,7 @@ export default StyleSheet.create({
     },
     emoji:{
         fontSize: 50,
+        marginBottom: 30,
     },
     image:{
         width: widthDisplay,
@@ -66,13 +66,24 @@ export default StyleSheet.create({
         borderRadius: 20,
         backgroundColor: colors.green,
     },
+    buttonWC:{
+        height: 56,
+        width: 56,
+        borderRadius: 20,
+        backgroundColor: colors.green,
+    },
     buttonText:{
         fontSize: 17,
         color: '#FFF', 
     },
     buttonIcon:{
         fontSize: 32,
-        color: '#FFFFFF',
+        color: '#FFF',
+    },
+    buttonBack:{
+        width: 56,
+        height: 56,
+        margin: 20,
     },
     footer:{
         marginTop: 50,
